@@ -1,0 +1,29 @@
+---
+---
+<file-zone>
+    <input type="file" name="" id="">
+    <ul class="tagList"></ul>
+</file-zone>
+
+
+<script>
+  // Define the behaviour for our new type of HTML element.
+  class FileZone extends HTMLElement {
+    constructor() {
+      super();
+      let count = 0;
+
+      const input = this.querySelector('input');
+      const tagList = this.querySelector('ul');
+
+      // Each time the button is clicked, update the count.
+      input.addEventListener('input', (e) => {
+       const file =  e.target?.files;
+       console.log(file);
+      });
+    }
+  }
+
+  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
+  customElements.define('file-zone', FileZone);
+</script>

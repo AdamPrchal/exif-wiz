@@ -1,0 +1,20 @@
+{
+  "name": "Exif-Wiz",
+  "short_name": "Exif-Wiz",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#4F3FA0",
+  "description": "A simple exif tool for composing exif metadata.",
+  "icons": [
+    {
+      "src": "images/logo/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
